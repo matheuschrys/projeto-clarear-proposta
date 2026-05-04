@@ -1,0 +1,27 @@
+# Dependencias
+node_modules/
+
+# Build gerado pelo Vite
+dist/
+
+# Variaveis de ambiente e arquivos locais
+.env
+.env.*
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arquivos internos de agentes e contexto local
+AGENTS.md
+.agents/
+.codex/
+
+# Sistema operacional e editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
