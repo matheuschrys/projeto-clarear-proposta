@@ -135,6 +135,8 @@ const stackItems = [
   ["IA", "Modelos de linguagem para extração de tópicos, síntese e identificação de relações."],
 ];
 
+const ifamLogoUrl = `${import.meta.env.BASE_URL}ifam-cmc-logo.png`;
+
 function Header({ theme, onToggleTheme }) {
   const isDark = theme === "dark";
 
@@ -235,7 +237,7 @@ function Hero() {
       <aside className="institution-card" aria-label="Instituição">
         <span>Instituição de ensino</span>
         <img
-          src="/ifam-cmc-logo.png"
+          src={ifamLogoUrl}
           alt="Instituto Federal do Amazonas, Campus Manaus Centro"
         />
       </aside>

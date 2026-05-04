@@ -60,6 +60,20 @@ npm run preview
 
 Abra no navegador o endereço informado pelo terminal.
 
+## Publicação no GitHub Pages
+
+O projeto está configurado para publicar em:
+
+```text
+https://matheuschrys.github.io/projeto-clarear-proposta/
+```
+
+Pontos importantes:
+
+- O `base` em `vite.config.js` precisa continuar como `/projeto-clarear-proposta/`.
+- Imagens em `public/` devem ser referenciadas com `import.meta.env.BASE_URL` para funcionarem dentro da subpasta do GitHub Pages.
+- O workflow em `.github/workflows/deploy.yml` publica automaticamente a cada push na branch `main` e também pode ser executado manualmente pela aba Actions.
+
 ## Estrutura principal
 
 - `src/App.jsx`: conteúdo e componentes da landing page.
@@ -67,4 +81,3 @@ Abra no navegador o endereço informado pelo terminal.
 - `src/main.jsx`: ponto de entrada da aplicação React.
 - `index.html`: HTML base usado pelo Vite.
 - `vite.config.js`: configuração do Vite.
-
